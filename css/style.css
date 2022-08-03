@@ -1,0 +1,421 @@
+/* ============ Font-Family section css start ============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap');
+
+/* ============ Font-Family section css end ============ */
+
+/* ============ Common CSS section start ============ */
+a {
+    text-decoration: none;
+}
+
+/* ============ Common CSS section end ============ */
+
+/* ============ root-variable section css start ============ */
+:root {
+    --common-font: 'Poppins', sans-serif;
+    --button-color: #DD0000;
+    --common-color: #161616;
+}
+
+/* ============ root-variable section css end ============ */
+
+/* ============ Header section css start ============ */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.banner-bg {
+    width: 80%;
+    height: 450px;
+    background-color: #161616;
+    display: flex;
+    border-radius: 10px;
+}
+
+.banner-info {
+    width: 50%;
+    font-family: var(--common-font);
+    color: white;
+    padding-left: 110px;
+    margin: 0 auto;
+}
+
+.banner-info h1 {
+    font-size: 42px;
+    font-weight: 700;
+    padding-right: 70px;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.banner-info p {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.banner-info button {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--button-color);
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    transition: all linear 0.4s;
+}
+
+.banner-info button:hover {
+    background-color: goldenrod;
+}
+
+.banner-info button a {
+    color: #ffffff;
+}
+
+.banner-img {
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner-img img {
+    height: 100%;
+}
+
+/* ============ Header section css end ============ */
+
+/* ============ Main section css start ============ */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bg {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+.main-bg .main-list {
+    width: 20%;
+    height: 200px;
+    background-color: var(--common-color);
+    border-radius: 5px;
+
+}
+
+.main-list .btn-1 {
+    background-color: red;
+}
+
+.list-item {
+    padding: 10px 20px;
+    margin: 11px 20px;
+    font-family: var(--common-font);
+    font-weight: 500;
+    width: 160px;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-news {
+    width: 240px;
+    height: 100%;
+    margin: 0 0 40px 20px;
+}
+
+.news-item {
+    height: 150px;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.news-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+
+.news-img img {
+    width: 40%;
+    cursor: crosshair;
+}
+
+.news-info {
+    height: 50%;
+    text-align: center;
+}
+
+.news-info h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.news-info p {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* ============ Main section css end ============ */
+
+/* ============ Footer section css start ============ */
+footer .foot-part {
+    width: 100%;
+    height: 300px;
+    background-color: var(--common-color);
+    margin-top: 50px;
+}
+
+.upper-part {
+    padding-top: 50px;
+}
+
+.upper-part h2 {
+    color: rgb(255, 255, 255);
+    font-family: var(--common-font);
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upper-part hr {
+    border-bottom: .5px solid rgb(82, 82, 82);
+    width: 80%;
+}
+
+.lower-part {
+    margin-top: 40px;
+}
+
+.lower-part .gen-info {
+    color: rgb(197, 197, 197);
+    display: flex;
+    justify-content: center;
+}
+
+.lower-part .gen-info li {
+    list-style: none;
+    padding-right: 50px;
+    font-family: var(--common-font);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lower-part .follow-us {
+    color: rgb(251, 255, 0);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: var(--common-font);
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.follow-us li a {
+    color: cyan;
+    padding-left: 30px;
+}
+
+/* ============ Footer section css end ============ */
+
+/* ============ Media Query section css start ============ */
+@media screen and (max-width: 576px) {
+    .banner-bg {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .banner-info {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-info h1 {
+        font-size: 26px;
+        font-weight: 600;
+        padding-right: 0;
+        padding-left: 30px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .banner-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .main-bg {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-bg .main-list {
+        background-color: white;
+    }
+
+    .main-bg .main-list .list-item {
+        border: 2px solid #E8E8E8;
+        background-color: white;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .main-bg .main-list {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .main-bg .main-list .btn-1 {
+        background-color: #ffffff;
+        width: 80%;
+    }
+
+    .main-bg .main-list .btn-2 {
+        width: 65%;
+    }
+
+    .main-bg .main-list .btn-3 {
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .main-items .main-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+
+    footer .foot-part {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 300px;
+    }
+
+    footer .foot-part .upper-part {
+        padding-top: 0;
+    }
+
+    footer .foot-part .lower-part {
+        margin-top: 0;
+    }
+
+    .lower-part .gen-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lower-part .gen-info li {
+        padding-top: 8px;
+    }
+
+    .lower-part .follow-us {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    header .banner-bg {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-info {
+        width: 50%;
+        padding-left: 80px;
+        margin: 0 auto;
+    }
+
+    .banner-info h1 {
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 0;
+        padding-left: 0px;
+        width: 80%;
+        height: 100%;
+        line-height: 45px;
+    }
+
+    .banner-info button {
+        padding: 10px 20px;
+    }
+
+    .main-items .main-bg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-bg .main-list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .main-bg .main-list .list-item {
+        border: 2px solid #E8E8E8;
+        background-color: white;
+        font-weight: 800;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .main-bg .main-list .btn-3 {
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .main-news {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+/* ============ Media Query section css end ============ */
